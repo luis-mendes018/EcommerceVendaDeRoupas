@@ -43,7 +43,7 @@
                             <td class="text-right">@item.Roupa.Preco.ToString("c")</td>
 
                             <td class="text-right">
-                                @((item.Quantidade + item.Roupa.Preco).ToString("c"))
+                                @((item.Quantidade * item.Roupa.Preco).ToString("c"))
                             </td>
 
                             

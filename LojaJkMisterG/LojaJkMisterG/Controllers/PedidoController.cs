@@ -3,7 +3,6 @@ using LojaJkMisterG.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-using Newtonsoft.Json;
 
 namespace LojaJkMisterG.Controllers
 {
@@ -61,7 +60,7 @@ namespace LojaJkMisterG.Controllers
                 _pedidoRepository.CriarPedido(pedido);
 
                 //define mensagens ao cliente
-                ViewBag.CheckoutCompletoMensagem = "Pedido realizado com sucesso! Obrigado por visitar a nossa loja :)";
+                ViewBag.CheckoutCompletoMensagem = "\nPedido realizado com sucesso! Obrigado por visitar a nossa loja :)\n";
                 ViewBag.TotalPedido = _carrinhoCompra.GetCarrinhoCompraTotal();
 
                 //limpa o carrinho do cliente
@@ -69,7 +68,7 @@ namespace LojaJkMisterG.Controllers
 
                 //exibe a view com dados do cliente e do pedido
 
-                return View("Checkout.cshtml", pedido);
+                return View("~/Views/Pedido/CheckoutCompleto.cshtml", pedido);
             }
 
             return View(pedido);

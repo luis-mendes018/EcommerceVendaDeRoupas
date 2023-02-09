@@ -40,10 +40,12 @@ namespace LojaJkMisterG.Models
         [Required(ErrorMessage = "Informe o seu CEP!")]
         [Display(Name = "CEP")]
         [CepValidation(ErrorMessage = "CEP inválido!")]
+        [MaxLength(9)]
         public string Cep { get; set; }
 
         [Required(ErrorMessage = "Informe o seu CPF!")]
         [CpfValidation]
+        [MaxLength(14)]
         [Display(Name = "CPF")]
         public string Cpf { get; set; }
 

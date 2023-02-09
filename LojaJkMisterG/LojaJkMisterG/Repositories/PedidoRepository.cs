@@ -18,6 +18,9 @@ namespace LojaJkMisterG.Repositories
         public void CriarPedido(Pedido pedido)
         {
             pedido.PedidoEnviado = DateTime.Now;
+
+            _appDbContext.Pedidos.Add(pedido);
+
             _appDbContext.SaveChanges();
 
             var carrinhoCompraItens = _carrinhoCompra.CarrinhoCompraItens;

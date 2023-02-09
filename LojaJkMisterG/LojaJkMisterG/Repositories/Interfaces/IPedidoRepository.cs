@@ -1,10 +1,11 @@
-﻿using LojaJkMisterG.Models;
+﻿using LojaJkMisterG.Context;
+using LojaJkMisterG.Models;
 
 namespace LojaJkMisterG.Repositories.Interfaces
 {
     public interface IPedidoRepository
     {
-        void CriarPedido(Pedido pedido);
-       
+        public void CriarPedido(Pedido pedido);
+
     }
 }

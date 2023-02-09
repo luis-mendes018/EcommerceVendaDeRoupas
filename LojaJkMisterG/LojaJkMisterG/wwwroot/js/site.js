@@ -1,32 +1,32 @@
-﻿//var nextButton = document.querySelector(".carousel-control-next");
-//var prevButton = document.querySelector(".carousel-control-prev");
+﻿var nextButton = document.querySelector(".carousel-control-next");
+var prevButton = document.querySelector(".carousel-control-prev");
 
-//nextButton.addEventListener("click", function () {
-//    $('#carouselStore').carousel('next');
-//});
+nextButton.addEventListener("click", function () {
+    $('#carouselStore').carousel('next');
+});
 
-//prevButton.addEventListener("click", function () {
-//    $('#carouselStore').carousel('prev');
-//});
+prevButton.addEventListener("click", function () {
+    $('#carouselStore').carousel('prev');
+});
 
 
 
 // consulta cep
 function limpa_formulário_cep() {
     //Limpa valores do formulário de cep.
-    document.getElementById('rua').value = ("");
+    document.getElementById('Endereco1').value = ("");
     document.getElementById('bairro').value = ("");
     document.getElementById('cidade').value = ("");
-    document.getElementById('uf').value = ("");
+    document.getElementById('Estado').value = ("");
 }
 
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
         //Atualiza os campos com os valores.
-        document.getElementById('rua').value = (conteudo.logradouro);
+        document.getElementById('Endereco1').value = (conteudo.logradouro);
         document.getElementById('bairro').value = (conteudo.bairro);
         document.getElementById('cidade').value = (conteudo.localidade);
-        document.getElementById('uf').value = (conteudo.uf);
+        document.getElementById('Estado').value = (conteudo.uf);
 
     } //end if.
     else {
@@ -51,10 +51,10 @@ function pesquisacep(valor) {
         if (validacep.test(cep)) {
 
             //Preenche os campos com "..." enquanto consulta webservice.
-            document.getElementById('rua').value = "...";
+            document.getElementById('Endereco1').value = "...";
             document.getElementById('bairro').value = "...";
             document.getElementById('cidade').value = "...";
-            document.getElementById('uf').value = "...";
+            document.getElementById('Estado').value = "...";
             //document.getElementById('ibge').value = "...";
 
             //Cria um elemento javascript.
@@ -78,5 +78,34 @@ function pesquisacep(valor) {
         limpa_formulário_cep();
     }
 };
+
+
+//Mostrar senha
+
+function MostrarSenha() {
+    var passwordInput = document.getElementById("Password");
+    var passwordConfirmInput = document.getElementById("PasswordConfirm");
+    var currentType = passwordInput.getAttribute("type");
+
+    if (currentType == "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}
+
+
+//Mostrar senha de confirmação
+
+function MostrarSenhaConfirm() {
+    var passwordInput = document.getElementById("PasswordConfirm");
+    var currentType = passwordInput.getAttribute("type");
+
+    if (currentType == "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}
 
 

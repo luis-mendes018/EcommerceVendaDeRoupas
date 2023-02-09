@@ -2,7 +2,7 @@
 using LojaJkMisterG.Models;
 using LojaJkMisterG.Repositories;
 using LojaJkMisterG.Repositories.Interfaces;
-
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,6 +22,23 @@ namespace LojaJkMisterG;
         {
             services.AddDbContext<AppDbContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+             services.AddIdentity<IdentityUser, IdentityRole>()
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
+
+             #region política de senhas do identity
+             // services.Configure<IdentityOptions>(options => {
+             //    // Default Password settings.
+             //    options.Password.RequireDigit = true;
+             //    options.Password.RequireLowercase = true;
+             //    options.Password.RequireNonAlphanumeric = true;
+             //    options.Password.RequireUppercase = true;
+             //    options.Password.RequiredLength = 8;
+             //    options.Password.RequiredUniqueChars = 1;
+             //});
+             #endregion
+
 
             services.AddTransient<IRoupaRepository, RoupaRepository>();
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
@@ -54,8 +71,9 @@ namespace LojaJkMisterG;
            app.UseStaticFiles();
 
            app.UseRouting();
-           app.UseSession(); 
+           app.UseSession();
 
+           app.UseAuthentication();     
            app.UseAuthorization();
 
            app.UseEndpoints(endpoints =>

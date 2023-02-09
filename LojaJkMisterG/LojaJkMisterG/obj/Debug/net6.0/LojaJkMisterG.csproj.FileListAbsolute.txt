@@ -287,3 +287,8 @@ D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG\bin\Debug\net6.0\runtimes\unix\lib\
 D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

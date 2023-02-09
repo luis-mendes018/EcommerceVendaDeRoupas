@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Qo9hf0xhlUWYHeM+Ntv0g3tLgjXFn8VNH3NEEHNx+x8=",
+  "Hash": "2xCBqRxkpY0L3DjJnShWzMW3+V2mf2Lzpi9gGlE3N0w=",
   "Source": "LojaJkMisterG",
   "BasePath": "_content/LojaJkMisterG",
   "Mode": "Default",
@@ -867,6 +867,23 @@
       "OriginalItemSpec": "wwwroot\\images\\Blusa.jpg"
     },
     {
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\cadastro.png",
+      "SourceId": "LojaJkMisterG",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
+      "BasePath": "_content/LojaJkMisterG",
+      "RelativePath": "images/cadastro.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cadastro.png"
+    },
+    {
       "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Calca.jpg",
       "SourceId": "LojaJkMisterG",
       "SourceType": "Discovered",
@@ -984,6 +1001,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\facebook-app-symbol.svg"
+    },
+    {
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\group.png",
+      "SourceId": "LojaJkMisterG",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
+      "BasePath": "_content/LojaJkMisterG",
+      "RelativePath": "images/group.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\group.png"
+    },
+    {
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\group1.png",
+      "SourceId": "LojaJkMisterG",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
+      "BasePath": "_content/LojaJkMisterG",
+      "RelativePath": "images/group1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\group1.png"
     },
     {
       "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Home-iconred.png",

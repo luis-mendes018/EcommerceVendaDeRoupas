@@ -229,6 +229,10 @@
       "PackagePath": "staticwebassets\\images\\Roupa4.jpg"
     },
     {
+      "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\cadastro.png",
+      "PackagePath": "staticwebassets\\images\\cadastro.png"
+    },
+    {
       "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\cart.png",
       "PackagePath": "staticwebassets\\images\\cart.png"
     },
@@ -247,6 +251,14 @@
     {
       "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\facebook-app-symbol.svg",
       "PackagePath": "staticwebassets\\images\\facebook-app-symbol.svg"
+    },
+    {
+      "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\group.png",
+      "PackagePath": "staticwebassets\\images\\group.png"
+    },
+    {
+      "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\group1.png",
+      "PackagePath": "staticwebassets\\images\\group1.png"
     },
     {
       "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\instagram.svg",

@@ -1,5 +1,11 @@
 ﻿@model Pedido
 
+<style>
+    .card .card-body{
+
+        margin-top: 20px;
+    }
+</style>
 <div class="container">
 
     <div class="jumbotron">
@@ -16,7 +22,7 @@
                 <tr>
                     <th></th>
                     <th>Quantidade</th>
-                    <th>Lanche</th>
+                    <th>Roupa</th>
                     <th>Preço</th>
                 </tr>
 
@@ -31,7 +37,7 @@
                 }
             </table>
 
-            <h4>Valor Total do Pedido: <strong>@(((decimal)ViewBag.Total.Pedido).ToString("C2"))</strong><</h4>>
+            <h4>Valor Total do Pedido: <strong>@(((decimal)ViewBag.TotalPedido).ToString("C2"))</strong><</h4>>
         </div>
     </div>
 
