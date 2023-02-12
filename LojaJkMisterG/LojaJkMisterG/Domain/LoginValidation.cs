@@ -16,7 +16,7 @@ namespace LojaJkMisterG.Domain
 
         public bool ValidaLetraLogin(string login)
         {
-            if (login.Trim().ToLower().Contains(".") == true)
+            if (login.Trim().ToLower().Contains('.'))
             {
                 return true;
             }

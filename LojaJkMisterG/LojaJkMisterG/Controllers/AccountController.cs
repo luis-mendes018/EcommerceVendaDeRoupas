@@ -62,22 +62,33 @@ namespace LojaJkMisterG.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = registroVM.UserName };
+                var user = new IdentityUser 
+                { 
+                    UserName = registroVM.UserName,
+                    Email = registroVM.EmailRegister, 
+                };
 
-                var email = await _userManager.CreateAsync(user, registroVM.EmailRegister);
 
-                var result = await _userManager.CreateAsync(user,registroVM.Password);
-
-                var result2 = await _userManager.CreateAsync(user, registroVM.PasswordConfirm);
-
-                var existingUser = await _userManager.FindByNameAsync(registroVM.UserName);
-                if (existingUser != null)
+                var userWithSameUsername = await _userManager.FindByNameAsync(registroVM.UserName);
+                if (userWithSameUsername != null)
                 {
-                    ModelState.AddModelError("", "O nome de usuário já existe");
+                    this.ModelState.AddModelError("UserName", "Já existe um usuário com esse nome");
                     return View(registroVM);
                 }
 
-                if (result.Succeeded && email.Succeeded && result2.Succeeded)
+                // Verifica se o endereço de e-mail já existe
+                var userWithSameEmail = await _userManager.FindByEmailAsync(registroVM.EmailRegister);
+                if (userWithSameEmail != null)
+                {
+                    this.ModelState.AddModelError("EmailRegister", "Já existe um usuário com esse endereço de e-mail");
+                    return View(registroVM);
+                }
+
+
+                var result = await _userManager.CreateAsync(user, registroVM.Password);
+
+
+                if (result.Succeeded)
                 {
                     return RedirectToAction("Login", "Account");
                 }
