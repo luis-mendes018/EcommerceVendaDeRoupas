@@ -2,6 +2,7 @@
 using LojaJkMisterG.Repositories.Interfaces;
 using LojaJkMisterG.ViewModels;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaJkMisterG.Controllers
@@ -17,6 +18,7 @@ namespace LojaJkMisterG.Controllers
             _carrinhoCompra = carrinhoCompra;
         }
 
+        [Authorize]
         public IActionResult Carrinho()
         {
             var itens = _carrinhoCompra.GetCarrinhoCompraItens();
@@ -31,6 +33,7 @@ namespace LojaJkMisterG.Controllers
             return View(carrinhoCompraVM);
         }
 
+        [Authorize]
         public RedirectToActionResult AdicionarItemNoCarrinhoCompra(int roupaId)
         {
             var roupaSelecionada = _roupaRepository.Roupas
@@ -44,6 +47,7 @@ namespace LojaJkMisterG.Controllers
             return RedirectToAction("Carrinho");
         }
 
+        [Authorize]
         public IActionResult RemoverItemDoCarrinho(int roupaId)
         {
             var roupaSelecionada = _roupaRepository.Roupas

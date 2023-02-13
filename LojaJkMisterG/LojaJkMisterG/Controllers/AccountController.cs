@@ -1,4 +1,5 @@
 ﻿using LojaJkMisterG.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Protocol.Plugins;
@@ -16,6 +17,7 @@ namespace LojaJkMisterG.Controllers
             _signInManager = signInManager;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult Login(string returnurl)
         {
@@ -25,6 +27,7 @@ namespace LojaJkMisterG.Controllers
             });
         }
 
+        [AllowAnonymous]
         [HttpPost]
 
         public async Task<IActionResult> Login(LoginViewModel loginVM)
@@ -51,11 +54,13 @@ namespace LojaJkMisterG.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [AllowAnonymous]
         public IActionResult Register()
         {
             return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(CadastroViewModel registroVM)
@@ -90,6 +95,7 @@ namespace LojaJkMisterG.Controllers
 
                 if (result.Succeeded)
                 {
+                    TempData["Mensagem"] = "\nCadastro realizado com suscesso! Efetue o login.\n";
                     return RedirectToAction("Login", "Account");
                 }
                 else
@@ -101,5 +107,16 @@ namespace LojaJkMisterG.Controllers
 
             return View(registroVM);
         }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            HttpContext.Session.Clear();
+            HttpContext.User = null;
+            await _signInManager.SignOutAsync(); 
+            return RedirectToAction("Index", "Home");
+        }
+
     }
 }

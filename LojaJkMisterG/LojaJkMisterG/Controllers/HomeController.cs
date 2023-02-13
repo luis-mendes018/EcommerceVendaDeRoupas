@@ -1,12 +1,14 @@
 ﻿using System.Diagnostics;
 using LojaJkMisterG.Models;
+
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaJkMisterG.Controllers
 {
     public class HomeController : Controller
     {
-        
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();

@@ -1,6 +1,7 @@
 ﻿using LojaJkMisterG.Repositories.Interfaces;
 using LojaJkMisterG.ViewModels;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaJkMisterG.Controllers
@@ -14,6 +15,7 @@ namespace LojaJkMisterG.Controllers
             _roupaRepository = roupaRepository;
         }
 
+        [Authorize]
         public IActionResult RoupaPreferida()
         {
             var roupaPreferidaViewModel = new RoupaPreferidaViewModel 

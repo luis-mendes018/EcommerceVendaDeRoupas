@@ -1,12 +1,13 @@
 ﻿using LojaJkMisterG.Models;
 using LojaJkMisterG.Repositories.Interfaces;
+
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 
 namespace LojaJkMisterG.Controllers
 {
-
     public class PedidoController : Controller
     {
         private readonly IPedidoRepository _pedidoRepository;
@@ -18,12 +19,14 @@ namespace LojaJkMisterG.Controllers
             _carrinhoCompra = carrinhoCompra;
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult Checkout()
         {
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult Checkout(Pedido pedido)
         {

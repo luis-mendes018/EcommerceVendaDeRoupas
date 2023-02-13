@@ -2,6 +2,7 @@
 using LojaJkMisterG.Repositories.Interfaces;
 using LojaJkMisterG.ViewModels;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaJkMisterG.Controllers
@@ -15,6 +16,7 @@ namespace LojaJkMisterG.Controllers
             _roupaRepository = roupaRepository;
         }
 
+        [Authorize]
         public IActionResult List(string categoria)
         {
             IEnumerable<Roupa> roupas;
@@ -60,6 +62,7 @@ namespace LojaJkMisterG.Controllers
             return View(roupasListViewModel);
         }
 
+        [Authorize]
         public IActionResult Details(int roupaId)
         {
             var roupa = _roupaRepository.Roupas.FirstOrDefault(r => r.RoupaId == roupaId);
@@ -67,6 +70,7 @@ namespace LojaJkMisterG.Controllers
             return View(roupa);
         }
 
+        [Authorize]
         public ViewResult Search(string searchString)
         {
             IEnumerable<Roupa> roupas;
