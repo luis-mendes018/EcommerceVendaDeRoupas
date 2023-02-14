@@ -44,7 +44,7 @@ namespace LojaJkMisterG.Controllers
                 {
                     if (string.IsNullOrEmpty(loginVM.ReturnUrl))
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("List", "Roupa");
                     }
 
                     return Redirect(loginVM.ReturnUrl);
