@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2xCBqRxkpY0L3DjJnShWzMW3+V2mf2Lzpi9gGlE3N0w=",
+  "Hash": "+7h1s+lDH+144QQlzx71cNAoc4iPoE3wjS1+b5BOof0=",
   "Source": "LojaJkMisterG",
   "BasePath": "_content/LojaJkMisterG",
   "Mode": "Default",
@@ -831,6 +831,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Admin.png",
+      "SourceId": "LojaJkMisterG",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
+      "BasePath": "_content/LojaJkMisterG",
+      "RelativePath": "images/Admin.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Admin.png"
     },
     {
       "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Bermuda.jpg",

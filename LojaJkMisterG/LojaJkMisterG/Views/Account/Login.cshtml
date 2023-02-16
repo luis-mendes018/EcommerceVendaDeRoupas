@@ -43,6 +43,7 @@
             </div>
         }
    </div>
+
     <table class="table">
         <tr>
             <td><img src="~/images/group.png" alt="Fazer o Login" class="center-block" /></td>
@@ -78,7 +79,29 @@
                                     <input type="submit" class="btn btn-success" value="Log in" />
                                 </div>
                             </div>
+
+                            <br />
+
                         </form>
+
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @{
+                                        var errorMessage = "Credenciais incorretas!";
+                                        var error = ViewData.ModelState.Values
+                                        .SelectMany(v => v.Errors)
+                                        .FirstOrDefault(e => e.ErrorMessage == errorMessage);
+
+                                        if (error != null)
+                                        {
+                                            <li>@errorMessage</li>
+                                        }
+                                    }
+                                </ul>
+                            </div>
+                        }
 
                     </div>
                 </div>

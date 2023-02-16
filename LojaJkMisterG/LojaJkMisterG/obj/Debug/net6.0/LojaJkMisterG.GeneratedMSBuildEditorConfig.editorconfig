@@ -16,12 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\JKMisterGSite\LojaJkMisterG\LojaJkMisterG
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Areas/Admin/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Views/AlterarSenha/AlterarSenhaView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx0ZXJhclNlbmhhXEFsdGVyYXJTZW5oYVZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Views/CarrinhoCompra/Carrinho.cshtml]
@@ -87,6 +103,10 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2zc2ydwman
 
 [D:/JKMisterGSite/LojaJkMisterG/LojaJkMisterG/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

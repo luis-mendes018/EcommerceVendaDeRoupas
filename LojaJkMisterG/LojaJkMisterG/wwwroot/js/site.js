@@ -84,7 +84,6 @@ function pesquisacep(valor) {
 
 function MostrarSenha() {
     var passwordInput = document.getElementById("Password");
-    var passwordConfirmInput = document.getElementById("PasswordConfirm");
     var currentType = passwordInput.getAttribute("type");
 
     if (currentType == "password") {
@@ -109,3 +108,39 @@ function MostrarSenhaConfirm() {
 }
 
 
+
+//Para alteração de senhas
+
+function MostrarSenhaAtual() {
+    var passwordInput = document.getElementById("PasswordNow");
+    var currentType = passwordInput.getAttribute("type");
+
+    if (currentType == "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}
+
+
+function MostrarNovaSenha() {
+    var passwordInput = document.getElementById("PasswordNew");
+    var currentType = passwordInput.getAttribute("type");
+
+    if (currentType == "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}
+
+function MostrarNovaSenhaConfirm() {
+    var passwordInput = document.getElementById("PasswordNewConfirm");
+    var currentType = passwordInput.getAttribute("type");
+
+    if (currentType == "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}

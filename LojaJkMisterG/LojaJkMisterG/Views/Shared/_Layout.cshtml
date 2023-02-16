@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +21,6 @@
                        
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <li>@await Component.InvokeAsync("CarrinhoCompraResumo")</li>
                             <li>@await Component.InvokeAsync("CategoriaMenu")</li>
 
                             <li class="nav-item">
@@ -44,9 +43,33 @@
                                 </form>
                             </li>
 
-                            <li class="nav-item" style="margin-left: 45%;">
-                                @await Html.PartialAsync("_LoginPartial")
-                            </li>
+                            <li style="margin-left:8px;">@await Component.InvokeAsync("CarrinhoCompraResumo")</li>
+
+                            <li class="nav-item" style="margin-left: 42%;">
+                                <div class="dropdown">
+
+                                    <a class="btn btn-light dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        @User.Identity.Name
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            @await Html.PartialAsync("_LoginPartial")
+                                        </li>
+
+
+                                        <li>
+                                            <a class="dropdown-item" style="color:black" asp-controller="AlterarSenha" asp-action="AlterarSenhaView">
+                                                Alerar senha
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+
+                            </li>   
+                               
+                            
                         }
                         else
                         {

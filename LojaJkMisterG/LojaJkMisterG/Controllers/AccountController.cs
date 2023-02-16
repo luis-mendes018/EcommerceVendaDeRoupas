@@ -51,7 +51,9 @@ namespace LojaJkMisterG.Controllers
                 }
             }
 
-            return RedirectToAction("Index", "Home");
+            ModelState.AddModelError(string.Empty, "Credenciais incorretas!");
+            return View("Login", loginVM);
+
         }
 
         [AllowAnonymous]
@@ -95,6 +97,7 @@ namespace LojaJkMisterG.Controllers
 
                 if (result.Succeeded)
                 {
+                    await _userManager.AddToRoleAsync(user, "Member");
                     TempData["Mensagem"] = "\nCadastro realizado com suscesso! Efetue o login.\n";
                     return RedirectToAction("Login", "Account");
                 }

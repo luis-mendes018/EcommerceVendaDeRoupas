@@ -189,6 +189,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Admin.png",
+      "PackagePath": "staticwebassets\\images\\Admin.png"
+    },
+    {
       "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Bermuda.jpg",
       "PackagePath": "staticwebassets\\images\\Bermuda.jpg"
     },
