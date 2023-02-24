@@ -82,7 +82,7 @@ namespace LojaJkMisterG.Models
         public DateTime PedidoEnviado { get; set; }
 
 
-        [Display(Name = "Data de envio do pedido")]
+        [Display(Name = "Entregue em")]
         [DataType(DataType.Text)]
         [DisplayFormat(DataFormatString = "{0: dd/MM/yyyy hh:mm}", ApplyFormatInEditMode = true)]
         public DateTime? PedidoEntregueEm { get; set; }

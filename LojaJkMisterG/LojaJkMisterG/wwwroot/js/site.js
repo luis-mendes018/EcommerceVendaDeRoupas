@@ -144,3 +144,16 @@ function MostrarNovaSenhaConfirm() {
         passwordInput.setAttribute("type", "password");
     }
 }
+
+//Área de administração
+
+function MostrarSenhaLoginAdm() {
+    var passwordInput = document.getElementById("PasswordAdm");
+    var currentType = passwordInput.getAttribute("type");
+
+    if (currentType == "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}

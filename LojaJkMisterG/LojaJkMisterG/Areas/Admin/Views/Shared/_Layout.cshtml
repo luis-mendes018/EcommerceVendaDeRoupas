@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/LojaJkMisterG.styles.css" asp-append-version="true" />
 </head>
 <body>
+    @*Área de administração*@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -21,28 +22,47 @@
 
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <li>@await Component.InvokeAsync("CarrinhoCompraResumo")</li>
-                            <li>@await Component.InvokeAsync("CategoriaMenu")</li>
-
+                           
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin" asp-action="Index">Home</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminRoupas" asp-action="ListAdm">Produtos</a>
+                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminRoupas" asp-action="Index">Produtos</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminCategorias" asp-action="CategoriaAdm">Categorias</a>
+                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminCategorias" asp-action="Index">Categorias</a>
                             </li> 
                             
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminPedidos" asp-action="PedidoAdm">Pedidos</a>
+                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminPedidos" asp-action="Index">Pedidos</a>
                             </li>
 
-                    
-                            <li class="nav-item" style="margin-left: 45%;">
-                                @await Html.PartialAsync("_LoginPartial")
+
+                            <li class="nav-item" style="margin-left: 62%;">
+                                <div class="dropdown">
+
+                                    <a class="btn btn-light dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        @User.Identity.Name
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            @await Html.PartialAsync("_LoginPartial")
+                                        </li>
+
+
+                                        <li>
+                                            <a class="dropdown-item" style="color:black" asp-area="Admin" asp-controller="Admin" asp-action="AlterarSenhaView">
+                                                Alerar senha
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
                             </li>
 
                         }
@@ -60,7 +80,7 @@
                             </li>
 
 
-                            <li class="nav-item" style="margin-left: 65%;">
+                            <li class="nav-item" style="margin-right: 65%;">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
                             </li>
 

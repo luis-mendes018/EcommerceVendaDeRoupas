@@ -233,6 +233,10 @@
       "PackagePath": "staticwebassets\\images\\Roupa4.jpg"
     },
     {
+      "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\area-restrita.png",
+      "PackagePath": "staticwebassets\\images\\area-restrita.png"
+    },
+    {
       "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\cadastro.png",
       "PackagePath": "staticwebassets\\images\\cadastro.png"
     },

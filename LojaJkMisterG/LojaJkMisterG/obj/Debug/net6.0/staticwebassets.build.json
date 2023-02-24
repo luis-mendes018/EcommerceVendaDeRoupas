@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+7h1s+lDH+144QQlzx71cNAoc4iPoE3wjS1+b5BOof0=",
+  "Hash": "Sp6bCfqUuoW/Uq83uRnQV7TpLpHR3VcOTVYc6Jgm/t0=",
   "Source": "LojaJkMisterG",
   "BasePath": "_content/LojaJkMisterG",
   "Mode": "Default",
@@ -848,6 +848,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Admin.png"
+    },
+    {
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\area-restrita.png",
+      "SourceId": "LojaJkMisterG",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
+      "BasePath": "_content/LojaJkMisterG",
+      "RelativePath": "images/area-restrita.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\area-restrita.png"
     },
     {
       "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Bermuda.jpg",

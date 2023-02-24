@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using ReflectionIT.Mvc.Paging;
+
 namespace LojaJkMisterG;
 
 public class Startup
@@ -60,6 +62,12 @@ public class Startup
         });
 
         services.AddControllersWithViews();
+
+        services.AddPaging(options =>
+        {
+            options.ViewName = "Bootstrap4";
+            options.PageParameterName = "pageindex";
+        });
 
         //Middlewares
         services.AddMemoryCache();

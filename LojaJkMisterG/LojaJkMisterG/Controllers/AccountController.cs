@@ -23,7 +23,7 @@ namespace LojaJkMisterG.Controllers
         {
             return View(new LoginViewModel()
             {
-                ReturnUrl = returnurl,
+                ReturnUrl = returnurl
             });
         }
 
@@ -121,5 +121,9 @@ namespace LojaJkMisterG.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }
