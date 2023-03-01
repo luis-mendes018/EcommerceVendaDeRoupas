@@ -1,4 +1,4 @@
-﻿namespace LojaJkMisterG.Services
+﻿namespace LojaJkMisterG.Servicos
 {
     public interface ISeedUserRoleInitial
     {

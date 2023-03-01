@@ -35,14 +35,15 @@ namespace LojaJkMisterG.Areas.Admin.Controllers
         {
             var resultado = _context.Roupas.Include(r => r.Categoria).AsQueryable();
 
-            if (string.IsNullOrWhiteSpace(filter))
+            if (!string.IsNullOrWhiteSpace(filter))
             {
                 resultado = resultado.Where(p => p.Nome.Contains(filter));
             }
 
             var model = await PagingList.CreateAsync(resultado, 5, pageindex, sort, "Nome");
-            model.RouteValue = new RouteValueDictionary { { "filter", filter } }; 
+            model.RouteValue = new RouteValueDictionary { { "filter", filter } };
             return View(model);
+
         }
 
         // GET: Admin/AdminRoupas/Details/5

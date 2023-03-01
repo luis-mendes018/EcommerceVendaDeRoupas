@@ -1,5 +1,7 @@
 ﻿@model ReflectionIT.Mvc.Paging.PagingList<LojaJkMisterG.Models.Roupa>
 
+@*@model IEnumerable<LojaJkMisterG.Models.Roupa>*@
+
 
 @{
     ViewData["Title"] = "Roupas";
@@ -18,10 +20,12 @@
 <h3>Produtos</h3>
 
 <form method="get" class="form-inline">
-    <input name="filter" class="form-control" placeholder="filtro" 
-    value="@Model.RouteValue["Filter"]" />
+    <input name="filter" class="form-control" placeholder="filtro"
+           value="@Model.RouteValue["Filter"]" />
     <br />
-    <button type="submit" class="btn btn-info"> Procurar</button>
+    <button type="submit" class="btn btn-info">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Procurar
+    </button>
 </form>
 <br />
 Total de Produtos: @Model.TotalRecordCount

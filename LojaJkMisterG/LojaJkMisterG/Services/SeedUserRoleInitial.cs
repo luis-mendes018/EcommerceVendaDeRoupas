@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace LojaJkMisterG.Services
+namespace LojaJkMisterG.Servicos
 {
     public class SeedUserRoleInitial : ISeedUserRoleInitial
     {

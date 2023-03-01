@@ -157,3 +157,48 @@ function MostrarSenhaLoginAdm() {
         passwordInput.setAttribute("type", "password");
     }
 }
+
+function AdminMostrarSenhaAtual() {
+    var passwordInput = document.getElementById("AdminPasswordNow");
+    var currentType = passwordInput.getAttribute("type");
+
+    if (currentType == "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}
+
+function AdminMostrarNovaSenha() {
+    var passwordInput = document.getElementById("AdminPasswordNew");
+    var currentType = passwordInput.getAttribute("type");
+
+    if (currentType == "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}
+
+function AdminMostrarNovaSenhaConfirm() {
+    var passwordInput = document.getElementById("AdminPasswordNewConfirm");
+    var currentType = passwordInput.getAttribute("type");
+
+    if (currentType == "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}
+
+
+//Copiar caminho da imagem. Admnistração
+function copyToClipboard(text) {
+    var input = document.createElement('input');
+    input.setAttribute('value', text);
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    alert('Caminho da imagem copiado para a área de transferência.');
+}

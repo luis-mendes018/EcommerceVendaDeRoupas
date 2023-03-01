@@ -1,13 +1,12 @@
-﻿using LojaJkMisterG.Context;
+﻿using LojaJkMisterG.Areas.Admin.Servicos;
+using LojaJkMisterG.Context;
 using LojaJkMisterG.Models;
 using LojaJkMisterG.Repositories;
 using LojaJkMisterG.Repositories.Interfaces;
-using LojaJkMisterG.Services;
-
+using LojaJkMisterG.Servicos;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
 using ReflectionIT.Mvc.Paging;
 
 namespace LojaJkMisterG;
@@ -43,11 +42,15 @@ public class Startup
         //});
         #endregion
 
+        services.Configure<ConfigurationImagens>(Configuration.GetSection("ConfigurationPastaImagens")); 
 
         services.AddTransient<IRoupaRepository, RoupaRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddTransient<IPedidoRepository, PedidoRepository>();
         services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
+
+        services.AddScoped<RelatorioVendasService>();
+        services.AddScoped<GraficoVendasService>();
 
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
@@ -89,7 +92,7 @@ public class Startup
             app.UseHsts();
         }
         app.UseHttpsRedirection();
-        app.UseStaticFiles();
+        
 
         app.UseRouting();
 
@@ -104,7 +107,7 @@ public class Startup
 
         app.UseAuthentication();
         app.UseAuthorization();
-
+        app.UseStaticFiles();
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllerRoute(

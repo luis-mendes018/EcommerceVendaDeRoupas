@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using System.Data;
 using System.Reflection.Metadata;
 using ReflectionIT.Mvc.Paging;
+using LojaJkMisterG.ViewModels;
 
 namespace LojaJkMisterG.Areas.Admin.Controllers
 {
@@ -25,6 +26,25 @@ namespace LojaJkMisterG.Areas.Admin.Controllers
             _context = context;
         }
 
+        public IActionResult PedidoRoupas(int? id)
+        {
+            var pedido = _context.Pedidos
+            .Include(pd => pd.Pedidoltens)
+            .ThenInclude(r => r.Roupa)
+            .FirstOrDefault(p => p.PedidoId == id);
+
+            if (pedido == null)
+            {
+                Response.StatusCode = 404; return View("PedidoNotFound", id.Value);
+            }
+
+            PedidoRoupaViewModel pedidoRoupa = new PedidoRoupaViewModel()
+            {
+                Pedido = pedido,
+                PedidoDetalhes = pedido.Pedidoltens
+            };
+            return View(pedidoRoupa);
+        }
         // GET: Admin/AdminPedidos
         //public async Task<IActionResult> Index()
         //{

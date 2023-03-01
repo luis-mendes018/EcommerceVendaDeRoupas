@@ -261,6 +261,10 @@
       "PackagePath": "staticwebassets\\images\\facebook-app-symbol.svg"
     },
     {
+      "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\file.png",
+      "PackagePath": "staticwebassets\\images\\file.png"
+    },
+    {
       "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\group.png",
       "PackagePath": "staticwebassets\\images\\group.png"
     },
@@ -271,6 +275,18 @@
     {
       "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\instagram.svg",
       "PackagePath": "staticwebassets\\images\\instagram.svg"
+    },
+    {
+      "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\produtos\\Camiseta2.png",
+      "PackagePath": "staticwebassets\\images\\produtos\\Camiseta2.png"
+    },
+    {
+      "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\produtos\\CamisetaBrancajk.png",
+      "PackagePath": "staticwebassets\\images\\produtos\\CamisetaBrancajk.png"
+    },
+    {
+      "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\search.png",
+      "PackagePath": "staticwebassets\\images\\search.png"
     },
     {
       "Id": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\trash.svg",

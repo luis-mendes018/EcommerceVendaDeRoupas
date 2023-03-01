@@ -1,12 +1,13 @@
 ﻿using LojaJkMisterG.Models;
 using LojaJkMisterG.Repositories.Interfaces;
 using LojaJkMisterG.ViewModels;
-
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaJkMisterG.Controllers
 {
+    
+    [Authorize]
     public class RoupaController : Controller
     {
         private readonly IRoupaRepository _roupaRepository;

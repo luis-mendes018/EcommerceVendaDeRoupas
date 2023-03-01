@@ -38,7 +38,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="DescricaoDetalhada" class="control-label"></label>
-                <input asp-for="DescricaoDetalhada" class="form-control" />
+                <textarea asp-for="DescricaoDetalhada" name="DescricaoDetalhada" class="form-control"></textarea>
                 <span asp-validation-for="DescricaoDetalhada" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -67,7 +67,7 @@
                 </label>
             </div>
             <div class="form-group">
-                <label asp-for="CategoriaId" class="control-label"></label>
+                <label asp-for="CategoriaId" class="control-label">Categoria</label>
                 <select asp-for="CategoriaId" class ="form-control" asp-items="ViewBag.CategoriaId"></select>
             </div>
             <div class="form-group">

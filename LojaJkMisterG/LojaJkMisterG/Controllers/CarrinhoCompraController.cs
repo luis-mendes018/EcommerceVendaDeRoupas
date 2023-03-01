@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LojaJkMisterG.Controllers
 {
+    
+    [Authorize]
     public class CarrinhoCompraController : Controller
     {
         private readonly IRoupaRepository _roupaRepository;

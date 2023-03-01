@@ -18,7 +18,6 @@
 </style>
 
 
-
 <h3>Pedidos</h3>
 
 <form method="get" class="form-inline">
@@ -35,9 +34,7 @@ Total de Pedidos: @Model.TotalRecordCount
     <vc:pager paging-list="@Model"></vc:pager>
 </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -140,7 +137,8 @@ Total de Pedidos: @Model.TotalRecordCount
             <td>
                 <a asp-action="Edit" asp-route-id="@item.PedidoId">Editar</a> |
                 <a asp-action="Details" asp-route-id="@item.PedidoId">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.PedidoId">Deletar</a>
+                <a asp-action="Delete" asp-route-id="@item.PedidoId">Deletar</a> |
+                <a asp-action="PedidoRoupas" asp-route-id="@item.PedidoId">Itens</a>
             </td>
         </tr>
 }

@@ -37,10 +37,28 @@
                             
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminPedidos" asp-action="Index">Pedidos</a>
+                            </li> 
+                            
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminRelatorioVendas" asp-action="Index">Relatório de Vendas</a>
                             </li>
 
+                            <!-- Graficos-->
+                            <li class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gráficos de Vendas
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="AdminGrafico" asp-action="Index">Vendas Anual</a>
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="AdminGrafico" asp-action="VendasMensal" asp-route-dias="30">Vendas Mensais</a>
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="AdminGrafico" asp-action="VendasSemanal" asp-route-dias="7">Vendas Semanais</a>
+                                </div>
+                            </li>
+                            <!--fim menu grafico-->
 
-                            <li class="nav-item" style="margin-left: 62%;">
+
+
+                            <li class="nav-item" style="margin-left: 38%;">
                                 <div class="dropdown">
 
                                     <a class="btn btn-light dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,15 +66,23 @@
                                     </a>
 
                                     <ul class="dropdown-menu">
-                                        <li>
-                                            @await Html.PartialAsync("_LoginPartial")
+
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item" style="color:black" asp-area="Admin" asp-controller="Funcionarios" asp-action="Index">Funcionários</a>
                                         </li>
 
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item" style="color:black" asp-area="Admin" asp-controller="AdminImagens" asp-action="Index">Gerenciar imagens</a>
+                                        </li>
 
-                                        <li>
-                                            <a class="dropdown-item" style="color:black" asp-area="Admin" asp-controller="Admin" asp-action="AlterarSenhaView">
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item" style="color:black" asp-area="Admin" asp-controller="Admin" asp-action="AdminAlterarSenhaView">
                                                 Alerar senha
                                             </a>
+                                        </li>
+
+                                        <li class="dropdown-item">
+                                            @await Html.PartialAsync("_LoginPartial")
                                         </li>
                                     </ul>
 

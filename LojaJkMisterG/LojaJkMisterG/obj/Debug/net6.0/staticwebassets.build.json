@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Sp6bCfqUuoW/Uq83uRnQV7TpLpHR3VcOTVYc6Jgm/t0=",
+  "Hash": "bzU6fSr5FIveqdlakjw+YZlPxKvLgHoTWnmF4dv40hY=",
   "Source": "LojaJkMisterG",
   "BasePath": "_content/LojaJkMisterG",
   "Mode": "Default",
@@ -1037,6 +1037,23 @@
       "OriginalItemSpec": "wwwroot\\images\\facebook-app-symbol.svg"
     },
     {
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\file.png",
+      "SourceId": "LojaJkMisterG",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
+      "BasePath": "_content/LojaJkMisterG",
+      "RelativePath": "images/file.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\file.png"
+    },
+    {
       "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\group.png",
       "SourceId": "LojaJkMisterG",
       "SourceType": "Discovered",
@@ -1122,6 +1139,40 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo.jpg"
     },
     {
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\produtos\\Camiseta2.png",
+      "SourceId": "LojaJkMisterG",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
+      "BasePath": "_content/LojaJkMisterG",
+      "RelativePath": "images/produtos/Camiseta2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\produtos\\Camiseta2.png"
+    },
+    {
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\produtos\\CamisetaBrancajk.png",
+      "SourceId": "LojaJkMisterG",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
+      "BasePath": "_content/LojaJkMisterG",
+      "RelativePath": "images/produtos/CamisetaBrancajk.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\produtos\\CamisetaBrancajk.png"
+    },
+    {
       "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Roupa1.jpg",
       "SourceId": "LojaJkMisterG",
       "SourceType": "Discovered",
@@ -1188,6 +1239,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Roupa4.jpg"
+    },
+    {
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\search.png",
+      "SourceId": "LojaJkMisterG",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
+      "BasePath": "_content/LojaJkMisterG",
+      "RelativePath": "images/search.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\search.png"
     },
     {
       "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\trash.svg",

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LojaJkMisterG.Models
 {
@@ -6,11 +7,11 @@ namespace LojaJkMisterG.Models
     public class CarrinhoCompraItem
     {
         public int CarrinhoCompraItemId { get; set; }
-        public Roupa Roupa { get; set; }
-
         public int Quantidade { get; set; }
 
         [StringLength(200)]
         public string CarrinhoCompraId { get; set; }
+
+        public Roupa Roupa { get; set; }
     }
 }

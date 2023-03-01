@@ -1,62 +1,60 @@
-﻿using LojaJkMisterG.ViewModels;
+﻿using LojaJkMisterG.Areas.Admin.AdmViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaJkMisterG.Areas.Admin.Controllers
 {
-
+    
     [Area("Admin")]
     [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
+        private readonly UserManager<IdentityUser> _admManager;
+
+        public AdminController(UserManager<IdentityUser> admManager)
+        {
+            _admManager = admManager;
+        }
+
         public IActionResult Index()
         {
             return View();
         }
 
-
         //Área de administração
-        private readonly UserManager<IdentityUser> _userManager;
-
-        public AdminController(UserManager<IdentityUser> userManager)
-        {
-            _userManager = userManager;
-        }
-
         [Authorize]
-        [Authorize(Roles = "Admin")]
-        public IActionResult AlterarSenhaView()
+        public IActionResult AdminAlterarSenhaView()
         {
-            return View(new AlterarSenhaViewModel());
+            return View(new AdminAlterarSenhaViewModel());
         }
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> AlterarSenhaView(AlterarSenhaViewModel alterarSenha)
+        public async Task<IActionResult> AdminAlterarSenhaView(AdminAlterarSenhaViewModel admAlterarSenha)
         {
             if (!ModelState.IsValid)
             {
-                return View(alterarSenha);
+                return View(admAlterarSenha);
             }
 
-            var user = await _userManager.GetUserAsync(User);
+            var user = await _admManager.GetUserAsync(User);
 
-            var result = await _userManager.CheckPasswordAsync(user, alterarSenha.PasswordNow);
+            var result = await _admManager.CheckPasswordAsync(user, admAlterarSenha.AdminPasswordNow);
 
             if (!result)
             {
                 ModelState.AddModelError("PasswordNow", "A senha atual fornecida está incorreta.");
-                return View(alterarSenha);
+                return View(admAlterarSenha);
             }
 
-            var newPassword = _userManager.PasswordHasher.HashPassword(user, alterarSenha.PasswordNew);
+            var newPassword = _admManager.PasswordHasher.HashPassword(user, admAlterarSenha.AdminPasswordNew);
             user.PasswordHash = newPassword;
-            var updateResult = await _userManager.UpdateAsync(user);
+            var updateResult = await _admManager.UpdateAsync(user);
             if (!updateResult.Succeeded)
             {
                 ModelState.AddModelError(string.Empty, "Ocorreu um erro ao atualizar a senha do usuário.");
-                return View(alterarSenha);
+                return View(admAlterarSenha);
             }
             else
             {
@@ -64,7 +62,7 @@ namespace LojaJkMisterG.Areas.Admin.Controllers
 
             }
 
-            return View(alterarSenha);
+            return View(admAlterarSenha);
 
         }
     }
