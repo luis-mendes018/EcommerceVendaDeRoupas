@@ -19,7 +19,7 @@ namespace LojaJkMisterG.Areas.Admin.Servicos
             var roupas = (from pd in context.PedidosDetalhe
                           join r in context.Roupas on pd.RoupaId equals r.RoupaId
                           where pd.Pedido.PedidoEnviado >= data
-                          group pd by new { pd.RoupaId, r.Nome, pd.Quantidade }
+                          group pd by new { pd.RoupaId, r.Nome }
                            into g
                           select new
                           {

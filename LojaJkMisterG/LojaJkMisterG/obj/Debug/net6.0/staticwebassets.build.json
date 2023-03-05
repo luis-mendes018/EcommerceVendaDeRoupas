@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bzU6fSr5FIveqdlakjw+YZlPxKvLgHoTWnmF4dv40hY=",
+  "Hash": "PXVLbxzTGCRr20jEF1o25s/2kMCFSWRXjGpZRqKB0Qo=",
   "Source": "LojaJkMisterG",
   "BasePath": "_content/LojaJkMisterG",
   "Mode": "Default",
@@ -1122,12 +1122,12 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram.svg"
     },
     {
-      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Logo.jpg",
+      "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\Jk.png",
       "SourceId": "LojaJkMisterG",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\",
       "BasePath": "_content/LojaJkMisterG",
-      "RelativePath": "images/Logo.jpg",
+      "RelativePath": "images/Jk.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1136,7 +1136,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Logo.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\Jk.png"
     },
     {
       "Identity": "D:\\JKMisterGSite\\LojaJkMisterG\\LojaJkMisterG\\wwwroot\\images\\produtos\\Camiseta2.png",
