@@ -1,2 +1,4 @@
 
-Senha do admin@localhost: Numsey#20
+Senha do admin@localhost: ....
+
+Desenvolvedor: Luis Felipe Mendes de Souza
